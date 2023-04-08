@@ -13,10 +13,10 @@
  /*Este es el boton o Toggle*/
 .toggle{
   background-color: royalblue;
-  width:  25px;
+  width:  30px;
   height: 25px;
-  top:08px;
-  left:10px;
+  top:08px; 
+  left:05px;
   cursor: pointer;
   border-radius: 100%;
   position: absolute;
