@@ -1,0 +1,31 @@
+/*Esta es la caja del toggle o botonera*/
+ .toggle_container{
+  width: 80px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: inset 4px 4px 6px #740202,
+  inset -4px -4px 6px #b3c0a2;
+  background-color: white;  
+ }
+
+ /*Este es el boton o Toggle*/
+.toggle{
+  background-color: royalblue;
+  width:  25px;
+  height: 25px;
+  top:08px;
+  left:10px;
+  cursor: pointer;
+  border-radius: 100%;
+  position: absolute;
+  box-shadow: 3px 3px 8px #8a2d2d,
+                -3px -3px 8px #661818;
+
+}
+/*Esto es para que la botonera aparezca a la izquierda*/
+ .flextoggle{
+  display: flex;
+  justify-content: flex-end;
+ }
