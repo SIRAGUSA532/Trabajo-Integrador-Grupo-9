@@ -225,36 +225,95 @@
    <section>
     <div class="conteiner my-5">
       <h1 class="text-center" id="Ancla-Cotizacion">Solicite su Cotizacion</h1><br>
-      <form class="row" >
+      <form class="row g-3 needs-validation" novalidate >
         <div class="mb-3 col-4">
           <label for="Nombre" class="form-label">Nombre/Apellido</label>
-          <input placeholder="Ingrese su nombre y apellido" type="email" class="form-control" id="Nombre" aria-describedby="nombre">
+          <input placeholder="Ingrese su nombre y apellido" type="Nombre" class="form-control" id="Nombre" aria-describedby="nombre" required>
           <!-- <div id="nombre" class="form-text">Ingrese su nombre y apellido.</div> -->
+          <div class="valid-feedback">
+          Correcto!
+          </div>
+          <div class="invalid-feedback">
+          Ingrese el nombre!
+          </div>
         </div>
         <div class="mb-3 col-4">
           <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-          <input placeholder="Ingrese su dirección de correo electrónico" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input placeholder="Ingrese su dirección de correo electrónico" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"required>
           <!-- <div id="emailHelp" class="form-text">Ingrese su dirección de correo electrónico.</div> -->
+          <div class="valid-feedback">
+            Correcto!
+            </div>
+            <div class="invalid-feedback">
+            Ingrese el Correo electrónico!
+            </div>
+          </div>
         </div>
-        <select class="form-select form-select-lg mb-3 col-4" aria-label=".form-select-lg example">
-          <option selected>Seleccione el servicio</option>
-          <option value="1">Desarrollo Web</option>
-          <option value="2">Redes Sociales</option>
-          <option value="3">Servicios Graficos</option>
+        <div>
+          <select class="form-select form-select-lg mb-3 col-4" aria-label=".form-select-lg example"required>
+            <option selected>Seleccione el servicio que quiere cotizar</option>
+            <option value="1">Desarrollo Web</option>
+            <option value="2">Redes Sociales</option>
+            <option value="3">Servicios Graficos</option>
+            <div class="valid-feedback">
+              Correcto!
+              </div>
+              <div class="invalid-feedback">
+              Seleccione una opcion!
+            </div>
         </select>
         </div>
         <div class="mb-3 col-12">
           <label for="Mensaje">Detalle </label>
-          <textarea class="form-control" name="mensaje" id="" cols="30" rows="5"></textarea>
-          
+          <textarea class="form-control" name="mensaje" id="" cols="30" rows="5"></textarea required>
+          <div class="valid-feedback">
+            Correcto!
+            </div>
+            <div class="invalid-feedback">
+            Ingrese el Detalle!
+            </div>
+          </div>
         </div>
+        
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="terms"required>
+            <label for="terms" class="form-check-label">Acepto los terminos y condiciones</label>
+            <div class="valid-feedback">
+              Correcto!
+              </div>
+              <div class="invalid-feedback">
+              Es necesario aceptar los terminos
+              </div>
+            </div>
+          </div>
+          </div>
         <div class="text-center"> <button type="submit" class="btn btn-primary">Enviar</button></div>
       </form>
-          
-
-        </div>
+     </div>
       </div>
     </div>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
    </section>
     
       <footer class="text-center py-3">
