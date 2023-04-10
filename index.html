@@ -136,7 +136,7 @@
             <div class="card text-center">
               <img src="Imagenes/alberto1.jpg" class="card-img-top" alt="...">
               <div class="card">
-                <h5 class="card-title" id="Ancla-Desatollo Web">Alberto Marcano</h5>
+                <h5 class="card-title" id="int1">Alberto Marcano</h5>
                 <p class="card-text">Web Developer, Diseñador Gráfico.</p>
                 
               </div>
@@ -147,7 +147,7 @@
             <div class="card text-center">
               <img src="Imagenes/Anibal.1.jpg" class="card-img-top" alt="...">
               <div class="card">
-                <h5 class="card-title" id="Ancla Redes-Sociales">Anibal Bustos</h5>
+                <h5 class="card-title" id="int2">Anibal Bustos</h5>
                 <p class="card-text">Web Developer, Community Manager.</p>
                 
               </div>
@@ -158,7 +158,7 @@
             <div class="card text-center">
               <img src="Imagenes/SELFI.jpeg" class="card-img-top" alt="...">
               <div class="card">
-                <h5 class="card-title" id="Ancla-Servicios Graficos">Marcos Siragusa</h5>
+                <h5 class="card-title" id="int3">Marcos Siragusa</h5>
                 <p class="card-text">Licenciado en Comunicación Social,Web Developer.</p>
                 
               </div>
@@ -180,7 +180,7 @@
               <div class="card-body">
                 <h5 class="card-title" id="Ancla-Desatollo Web">Desarrollo Web</h5>
                 <p class="card-text">Desarrollamos tu pagina web de forma integral desde cero.</p>
-                <a href="#Ancla-Cotizacion" class="btn btn-primary">Solicite Cotizacion</a>
+                <a href="#Ancla-Cotizacion" class="btn btn-primary" onclick="cargarSeleccion1()">Solicite Cotizacion</a>
               </div>
             </div>
           </div>
@@ -191,7 +191,7 @@
                 <div class="card-body">
                   <h5 class="card-title" id="Ancla Redes-Sociales">Redes sociales</h5>
                   <p class="card-text">Administramos tus redes sociales, para potenciar tu negocio.</p>
-                  <a href="#Ancla-Cotizacion" class="btn btn-primary">Solicite Cotizacion</a>
+                  <a href="#Ancla-Cotizacion" class="btn btn-primary" onclick="cargarSeleccion2()">Solicite Cotizacion</a>
                 </div>
               </div>
             </div>
@@ -202,7 +202,7 @@
                 <div class="card-body">
                   <h5 class="card-title" id="Ancla-Servicios Graficos">Servicios gráficos </h5>
                   <p class="card-text">Diseñamose e imprimimos productos gráficos de toda índole.</p>
-                  <a href="#Ancla-Cotizacion" class="btn btn-primary">Solicite Cotizacion</a>
+                  <a href="#Ancla-Cotizacion" class="btn btn-primary" onclick="cargarSeleccion3()">Solicite Cotizacion</a>
                 </div>
               </div>
             </div>
@@ -309,6 +309,48 @@
      </div>
       </div>
     </div>
+
+    <!-- // ingresado por anibal -->
+    <div class="container" >
+      <form id="datos">  
+        <div class="row">
+            <div class="col-3">
+                <label for="name">Nombre:</label><br>
+                <input class="uu" type="text" autocomplete="off" id="name1" name="name" placeholder="Nombre" required>
+            </div>
+            <div class="col-3">
+                <label for="apellido">Apellido:</label><br>
+                <input type="text" id="last" name="name" placeholder="Apellido"required>
+            </div>
+            <div class="col-4">
+                <label for="email">email:</label><br>
+                <input type="email" size="30" id="email1" name="email" placeholder="nombre@mail.com" required>
+            </div>
+            <div class="col-2">
+                <label for="phone">Nro. de telefono:</label><br>
+                <input type="phone" id="phone1" name="phone" placeholder="Celular" required>
+            </div>
+        </div><br>
+        <div id="imp1">
+          <div id="image"></div>
+        
+          <div id="ho"></div>
+        </div>  
+        
+        <div class="row">
+          <button onclick="escribir()" type="button">Pedido en pantalla</button>
+        </div>     
+
+        <div class="row">
+          <button onclick="imprimirElemento()" type="button">Imprimir Resumen</button>
+        </div>      
+      </form>  
+    </div>
+
+    <!-- ingresado por anibal -->
+
+
+
     <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
