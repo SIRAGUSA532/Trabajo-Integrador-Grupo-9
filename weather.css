@@ -1,0 +1,36 @@
+.form{
+display: flex;
+flex-direction: column;
+max-width: 400px;
+margin: 0 left;
+padding: 20px;
+border: 2px solid #cccccc;
+border-radius: 5px;
+}
+
+label{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, text{
+padding: 5px;
+margin-bottom: 10px;
+border: 1px solid #f50202;
+border-radius: 5px;
+font-size: 16px;
+}
+
+input[type="submit"]{
+background-color: blue;
+color: rosybrown;
+padding:10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: poiter;
+}
+
+input[type="submit"]:hover{
+  background-color: green;
+}

@@ -1,5 +1,5 @@
 //Aca amos a dar las instrucciones para que se mueva el boton dentro de la botonera//
-var toggle= document.querySelector(".toggle")
+var toggle= document.querySelector(".toggle_slider")
 var body=document.body
 
 toggle.addEventListener("click",()=>{
