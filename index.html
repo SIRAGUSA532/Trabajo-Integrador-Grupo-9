@@ -224,7 +224,7 @@
       
    <section>
      <div class="conteiner my-5">
-       <h1 class="text-center" id="Ancla-Cotizacion">Solicite su Cotizacion</h1><br>
+       <h1 class="text-center" >Solicite su Cotizacion</h1><br>
        <form class="row g-3 needs-validation" novalidate >
          <div class="mb-3 col-4">
            <label for="Nombre" class="form-label">Nombre/Apellido</label>
@@ -298,7 +298,8 @@
     <br>
 
     <!-- // ingresado por anibal -->
-    <div class="container-fluid" >
+    <div id="Ancla-Cotizacion" class="container-fluid" >
+      <h2>Ingrese sus datos para imprimir informe</h2>
       <form id="datos">  
         <div class="row">
             <div class="col-3">
@@ -322,11 +323,11 @@
           <div id="image"></div>
         
           <div id="ho"></div>
-        </div>  
+        </div> <br><br><br> 
         
         <div class="row">
           <button onclick="escribir()" type="button">Pedido en pantalla</button>
-        </div>     
+        </div><br>     
 
         <div class="row">
           <button onclick="imprimirElemento()" type="button">Imprimir Resumen</button>
