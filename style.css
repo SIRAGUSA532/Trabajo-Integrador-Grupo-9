@@ -1,7 +1,8 @@
 
 header{
-background-color: rgb(236, 6, 6);
-font-size: 25px;
+    background-color: rgb(236, 6, 6);
+    font-size: 25px;
+    position: static;    
 
 
 }
@@ -47,4 +48,44 @@ font-size: 25px;
         color: royalblue;
         font-size: 20px;
         text-shadow: 15px;
+       }
+
+       #clim{
+        background-color: rgb(173, 216, 233);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+
+       .col-4{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        
+       }
+
+       #img1{
+        
+        width:250px;
+        height:300px;
+        border-radius:150px;
+       }
+
+       #img2{
+        
+        width:250px;
+        height:300px;
+        border-radius:150px;
+       }
+
+       #img3{
+        
+        width:250px;
+        height:300px;
+        border-radius:150px;
        }

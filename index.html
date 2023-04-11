@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="toggle.css">
   </head>
-
+  
+  
   <body>
     <header>
       <!--aca estoy creando un div para el boton toggle de modo obscuro-->
@@ -23,6 +24,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark ">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#" ><img src="Imagenes/x.png" alt="">Mass</a>
+                  
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>                   
@@ -32,18 +34,21 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="#nos">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#int">Integrantes</a>
                       </li>
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#ser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Servicios
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#Ancla-Desatollo Web">Desarrollo Web</a></li>
+                          <li><a class="dropdown-item" href="#ser">Desarrollo Web</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#Ancla Redes-Sociales">Redes Sociales</a></li>
+                          <li><a class="dropdown-item" href="#ser">Redes Sociales</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#Ancla-Servicios Graficos">Servicios Graficos</a></li>
+                          <li><a class="dropdown-item" href="#ser">Servicios Graficos</a></li>
                         </ul>
                       </li>
                       <li class="nav-item">
@@ -58,14 +63,18 @@
 
 
       <!--esta es la sección de la API para clima -->
-    <p><h6>En <b><i>Mass +</i></b> nos preocupamos por su comodidad!</p>
-    Acá podrá consultar la condición del clima en tiempo real para su ciudad:</h6>
-    <form>
+    
+    
+  <div id="clim"><br>
+    <h6>Acá podrá consultar la condición del clima en tiempo real para su ciudad:</h6>
+    <form id="clima">
         <label for="city">Ciudad:</label>
         <input placeholder="Ingrese una cuidad" type="text" id="city" name="city">
         <button type="button" onclick="getWeather()">Obtener Clima</button>
     </form>
-    <div id="weather"></div>
+    <div id="weather"></div><br>
+
+  </div>
       <!--hasta acá termina la API de clima-->
 
 
@@ -111,11 +120,11 @@
           </div>
     </section>
     <section class="Nosotros my-5">
-        <h2 class="text-center my-5 ">Sobre Nosotros</h2>
+        <h2 id="nos" class="text-center my-5 ">Sobre Nosotros</h2>
         <div class="containar">
             <div class="row">
               <div class="col-6">
-                <p>A <b><i>Mass +</i></b>  lo conformamos un equipo de profesionales especializados en productos gráficos y de comunicación.
+                <p >A <b><i>Mass +</i></b>  lo conformamos un equipo de profesionales especializados en productos gráficos y de comunicación.
                   Desarrollamos un entendimiento profundo de tu necesidad  y objetivos, para hacer realidad aquellas 
                   imágenes que mejor reflejen las ideas que necesitás plasmar.</p><br>
                   <p>Nuestra marca registrada  es la diversidad de tecnologías que dominamos y la versatilidad de trabajar en equipo
@@ -127,17 +136,19 @@
             </div>
         </div>
    </section>
+   
+   
    <section class="Integrantes my-5"><br><br>
-    <h2 class="text-center my-5 ">Integrantes</h2>
+    <h2 class="text-center my-5 "id="int">Integrantes</h2>
     <section class="Nuestros Servicios my-5">
       <div class="containar"> 
         <div class="row">
           <div class="col-4">
             <div class="card text-center">
-              <img src="Imagenes/alberto1.jpg" class="card-img-top" alt="...">
+              <img id="img1" src="Imagenes/alberto1.jpg" class="card-img-top" alt="...">
               <div class="card">
                 <h5 class="card-title" id="int1">Alberto Marcano</h5>
-                <p class="card-text">Web Developer, Diseñador Gráfico.</p>
+                <p class="card-text">Web Developer <br> Diseñador Gráfico.</p>
                 
               </div>
             </div>
@@ -145,10 +156,10 @@
           
           <div class="col-4">
             <div class="card text-center">
-              <img src="Imagenes/Anibal.1.jpg" class="card-img-top" alt="...">
+              <img id="img2" src="Imagenes/Anibal.1.jpg" class="card-img-top" alt="...">
               <div class="card">
                 <h5 class="card-title" id="int2">Anibal Bustos</h5>
-                <p class="card-text">Web Developer, Community Manager.</p>
+                <p class="card-text">Web Developer <br> Community Manager.</p>
                 
               </div>
             </div>
@@ -156,10 +167,10 @@
           
           <div class="col-4" >
             <div class="card text-center">
-              <img src="Imagenes/SELFI.jpeg" class="card-img-top" alt="...">
+              <img id="img3" src="Imagenes/SELFI.jpeg" class="card-img-top" alt="...">
               <div class="card">
                 <h5 class="card-title" id="int3">Marcos Siragusa</h5>
-                <p class="card-text">Licenciado en Comunicación Social,Web Developer.</p>
+                <p class="card-text">Comunicación Social <br> WebDev</p>
                 
               </div>
             </div>
@@ -171,7 +182,7 @@
     
   </section>
   <section class="Nuestros Servicios my-5">
-      <h2 class="text-center my-5">Nuestros Servicios</h2>
+      <h2 id="ser" class="text-center my-5">Nuestros Servicios</h2>
       <div class="containar"> 
         <div class="row">
           <div class="col-4">
@@ -210,34 +221,7 @@
           </div>
         </div>
       </section>
-      <section class="Contactenos bg-secondary bs-primary-bg-subtle py-4">
-        <h2 class="text-center" id="Ancla-Contacto">Contacto</h2><br>
-        <div class="container">
-          <form class="row">
-            <div class="mb-3 col-4">
-              <label for="Nombre" class="form-label">Nombre/Apellido</label>
-              <input placeholder="Ingrese su nombre y apellido" type="email" class="form-control" id="Nombre" aria-describedby="nombre">
-              <!-- <div id="nombre" class="form-text">Ingrese su nombre y apellido.</div> -->
-            </div>
-            <div class="mb-3 col-4">
-              <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-              <input placeholder="Ingrese su dirección de correo electrónico" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <!-- <div id="emailHelp" class="form-text">Ingrese su dirección de correo electrónico.</div> -->
-            </div>
-            <div class="mb-3 col-4">
-              <label for="Asunto" class="form-label">Asunto</label>
-              <input placeholder="Ingrese el asunto" type="email" class="form-control" id="asunto" aria-describedby="asunto">
-              <!-- <div id="nombre" class="form-text">Ingrese el asunto.</div> -->
-            </div>
-            <div class="mb-3 col-12">
-              <label for="Mensaje">Mensaje</label>
-              <textarea class="form-control" name="mensaje" id="" cols="30" rows="5"></textarea>
-              
-            </div>
-            <div class="text-center"> <button type="submit" class="btn btn-primary">Enviar</button></div>
-          </form>
-        </div>
-      </section>
+      
    <section>
      <div class="conteiner my-5">
        <h1 class="text-center" id="Ancla-Cotizacion">Solicite su Cotizacion</h1><br>
@@ -303,15 +287,18 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="text-center"> <button type="submit" class="btn btn-primary">Enviar</button></div>
-  </form>
-     </div>
       </div>
-    </div>
+      <div class="text-center"> <button type="submit" class="btn btn-primary">Enviar</button></div>
+     </form>
+       </div>
+        </div>
+      </div>
+    
+    <br>
+    <br>
 
     <!-- // ingresado por anibal -->
-    <div class="container" >
+    <div class="container-fluid" >
       <form id="datos">  
         <div class="row">
             <div class="col-3">
@@ -322,8 +309,8 @@
                 <label for="apellido">Apellido:</label><br>
                 <input type="text" id="last" name="name" placeholder="Apellido"required>
             </div>
-            <div class="col-4">
-                <label for="email">email:</label><br>
+            <div class="col">
+                <label for="email">Correo Electronico:</label><br>
                 <input type="email" size="30" id="email1" name="email" placeholder="nombre@mail.com" required>
             </div>
             <div class="col-2">
@@ -346,9 +333,37 @@
         </div>      
       </form>  
     </div>
+    <br>
 
     <!-- ingresado por anibal -->
-
+    <section class="Contactenos bg-secondary bs-primary-bg-subtle py-4">
+      <h2 class="text-center" id="Ancla-Contacto">Contacto</h2><br>
+      <div class="container">
+        <form class="row">
+          <div class="mb-3 col">
+            <label for="Nombre" class="form-label">Nombre/Apellido</label><br>
+            <input placeholder="Ingrese su nombre y apellido" type="email" class="form-control" id="Nombre" aria-describedby="nombre">
+            <!-- <div id="nombre" class="form-text">Ingrese su nombre y apellido.</div> -->
+          </div>
+          <div class="mb-3 col">
+            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label><br>
+            <input placeholder="Ingrese su dirección de correo electrónico" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <!-- <div id="emailHelp" class="form-text">Ingrese su dirección de correo electrónico.</div> -->
+          </div>
+          <div class="mb-3 col">
+            <label for="Asunto" class="form-label">Asunto</label><br>
+            <input placeholder="Ingrese el asunto" type="email" class="form-control" id="asunto" aria-describedby="asunto">
+            <!-- <div id="nombre" class="form-text">Ingrese el asunto.</div> -->
+          </div>
+          <div class="mb-3 col-12">
+            <label for="Mensaje">Mensaje</label><br>
+            <textarea class="form-control" name="mensaje" id="" cols="30" rows="5"></textarea>
+            
+          </div>
+          <div class="text-center"> <button type="submit" class="btn btn-primary">Enviar</button></div>
+        </form>
+      </div>
+    </section>
 
 
     <script>
