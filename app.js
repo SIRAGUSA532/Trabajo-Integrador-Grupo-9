@@ -40,3 +40,12 @@ function imprimirElemento(){
 }
 
 // agregado por anibal
+
+function valida_envia(){
+    //valido el nombre
+    if (document.nombrex.nombre.value.length==0){
+           alert("Tiene que escribir su nombre")
+           document.nombrex.nombre.focus()
+           return 0;
+    }
+}

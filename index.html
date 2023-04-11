@@ -340,26 +340,39 @@
     <section class="Contactenos bg-secondary bs-primary-bg-subtle py-4">
       <h2 class="text-center" id="Ancla-Contacto">Contacto</h2><br>
       <div class="container">
-        <form class="row">
+        <form class="row g-3 needs-validation" novalidate>
           <div class="mb-3 col">
             <label for="Nombre" class="form-label">Nombre/Apellido</label><br>
-            <input placeholder="Ingrese su nombre y apellido" type="email" class="form-control" id="Nombre" aria-describedby="nombre">
+            <input placeholder="Ingrese su nombre y apellido" type="text" class="form-control" id="nombrex" aria-describedby="nombre"required>
             <!-- <div id="nombre" class="form-text">Ingrese su nombre y apellido.</div> -->
+            <div class="invalid-feedback">
+              Ingrese el Nombre y apellido!
+            </div>
           </div>
           <div class="mb-3 col">
             <label for="exampleInputEmail1" class="form-label">Correo electrónico</label><br>
-            <input placeholder="Ingrese su dirección de correo electrónico" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input placeholder="Ingrese su dirección de correo electrónico" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"required>
             <!-- <div id="emailHelp" class="form-text">Ingrese su dirección de correo electrónico.</div> -->
+            <div class="invalid-feedback">
+              Ingrese el Correo electrónico!
+            </div>
           </div>
           <div class="mb-3 col">
             <label for="Asunto" class="form-label">Asunto</label><br>
-            <input placeholder="Ingrese el asunto" type="email" class="form-control" id="asunto" aria-describedby="asunto">
+            <input placeholder="Ingrese el asunto" type="text" class="form-control" id="asunto" aria-describedby="asunto"required>
             <!-- <div id="nombre" class="form-text">Ingrese el asunto.</div> -->
+           <div class="invalid-feedback">
+            Ingrese el Asunto!
+          </div>
+        </div>
           </div>
           <div class="mb-3 col-12">
             <label for="Mensaje">Mensaje</label><br>
-            <textarea class="form-control" name="mensaje" id="" cols="30" rows="5"></textarea>
-            
+            <textarea class="form-control" name="mensaje" id="mensaje" cols="30" rows="5" ></textarea required>
+            <div class="invalid-feedback">
+              Ingrese el Mensaje!
+            </div>
+          </div>
           </div>
           <div class="text-center"> <button type="submit" class="btn btn-primary">Enviar</button></div>
         </form>
