@@ -14,8 +14,11 @@
   <body>
     <header>
       <!--aca estoy creando un div para el boton toggle de modo obscuro-->
-      <div class="toggle_flex"> 
-        <div class="toggle_container">
+      <div class="toggle_flex">
+          <div class="toggle_container">
+          <img class="sun" src="Imagenes/sun.png">
+          <img class="moon" src="Imagenes/moon.png">
+
             <div class="toggle_slider"></div>
         </div>
       </div>     
@@ -71,7 +74,7 @@
     <form id="clima">
         <label for="city">Ciudad:</label>
         <input placeholder="Ingrese una cuidad" type="text" id="city" name="city">
-        <button type="button" onclick="getWeather()">Obtener Clima</button>
+        <button type="submit">Obtener Clima</button>
     </form>
     <div id="weather"></div><br>
 
