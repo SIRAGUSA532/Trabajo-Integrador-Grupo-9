@@ -1,10 +1,39 @@
-.form{
+#clim{
+  background-image: linear-gradient(  rgb(236, 6, 6), rgb(190, 187, 187));
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+ }
+
+#clima{
+  background-color: blueviolet;
+  border-right: px;
+  ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .clim{
 display: flex;
 flex-direction: column;
 max-width: 400px;
 margin: 0 left;
 padding: 20px;
-border: 2px solid #cccccc;
+border: 2px solid #09db1b;
 border-radius: 5px;
 }
 
@@ -34,3 +63,4 @@ cursor: poiter;
 input[type="submit"]:hover{
   background-color: green;
 }
+} */
