@@ -25,7 +25,9 @@ formulario.addEventListener("submit",(event)=>{   //<----acá lo que hacemos es 
         weather.innerHTML = "El Clima actual en " + data.name + " es: cielo parcialmente nublado";
       } else if(data.weather[0].description=="clear sky"){
         weather.innerHTML = "El Clima actual en " + data.name + " es: cielo despejado";    
-      }//aca agrego otras condiciones//
+      } else if (data.weather[0].description=="scattered clouds"){
+        weather.innerHTML = "El clima actual en " + data.name + " es: nubes dispersas"
+      }  //aca agrego otras condiciones//
       else {
         weather.innerHTML = "El Clima actual en " + data.name + " es: " + data.weather[0].description; 
       }

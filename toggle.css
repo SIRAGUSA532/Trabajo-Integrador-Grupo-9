@@ -34,6 +34,7 @@
   height: 25px;
   top:08px; 
   left:05px;
+  border-color: #550202;
   cursor: pointer;
   transition: .9s;
   border-radius: 100%;
