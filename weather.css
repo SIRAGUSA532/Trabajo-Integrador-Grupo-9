@@ -10,16 +10,16 @@
 #clima{
   background-color: rgb(235, 221, 248);
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(236,6, 0.7);
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 #boton{
   border-radius: 15px;
 }
 .fondo-clima{
-width: 50px;
-height: 80px;
-
+width: 100px;
+height: 50px;
+border-radius: 15px;
 
 }
 
