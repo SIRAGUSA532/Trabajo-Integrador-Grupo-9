@@ -2,14 +2,30 @@
  .toggle_container{
   width: 80px;
   height: 40px;
-  margin-top: 10px;
+  margin-top: 30px;
+  margin-right: 30px;
+  padding-left: 100Spx;
   border-radius: 50px;
   position: relative;
-  display: inline-block;
+  display: flex;
   box-shadow: inset 4px 4px 6px #740202,
   inset -4px -4px 6px #b3c0a2;
   background-color: white;  
  }
+ .sun{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  }
+.moon{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  }
 
  /*Este es el boton del Toggle* o slider*/
 .toggle_slider{
@@ -18,52 +34,21 @@
   height: 25px;
   top:08px; 
   left:05px;
+  border-color: #550202;
   cursor: pointer;
   transition: .9s;
   border-radius: 100%;
   position: absolute;
   box-shadow:   3px 3px 8px #8a2d2d,
                -3px -3px 8px #661818;
-/* acá estoy intentando qu aparezcan las palabras on/off en el boton */
-                .toggle_container toggle_slider {
-                  position: absolute;
-                  cursor: pointer;
-                  top: 0;
-                  left: 0;
-                  right: 0;
-                  bottom: 0;
-                  background-color: #ccc;
-                  -webkit-transition: .4s;
-                  transition: .4s;
-                  border-radius: 34px;
-                }
- 
-                  .toggle_container .toggle_slider:before {
-                  position: absolute;
-                  content: "Off";
-                  height: 25px;
-                  width: 25px;
-                  left: 4px;
-                  bottom: 4px;
-                  background-color: rgb(11, 245, 42);
-                  -webkit-transition: .4s;
-                  transition: .4s;
-                  border-radius: 50%;
-                }
-                
-                input:checked + .slider {
-                  background-color: #2196F3;
-                }
-                
-                input:checked + .slider:before {
-                  content: "On";
-                  background-color: rgb(6, 247, 58);
-                  left: calc(100% - 26px - 4px);
-                }
 
 }
 /*Esto es para que la botonera aparezca a la izquierda*/
  .toggle_flex{
   display: flex;
   justify-content: flex-end;
+  position: absolute;
+  z-index: 5;
+  right: 0px;
+  top: 50px;
  }

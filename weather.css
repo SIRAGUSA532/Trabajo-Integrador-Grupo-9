@@ -4,16 +4,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  
- }
+  justify-content: center;
+  }
 
 #clima{
-  background-color: blueviolet;
-  border-right: px;
-  ;
+  background-color: rgb(235, 221, 248);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
+#boton{
+  border-radius: 15px;
+}
+.fondo-clima{
+width: 100px;
+height: 50px;
+border-radius: 15px;
 
+}
 
 
 

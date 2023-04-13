@@ -14,27 +14,30 @@
   <body>
     <header>
       <!--aca estoy creando un div para el boton toggle de modo obscuro-->
-      <div class="toggle_flex"> 
-        <div class="toggle_container">
-            <div class="toggle_slider"></div>
+      <div class="toggle_flex">
+          <div class="toggle_container">
+          <img class="sun" src="Imagenes/sun.png">
+          <img class="moon" src="Imagenes/moon.png">
+          <div class="toggle_slider">
+          </div>
         </div>
       </div>     
       <!--hasta aca esta mi boton, por las dudas-->
       
       <div class="conteiner">
-            <nav class="navbar navbar-expand-lg navbar-dark ">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#" ><img src="Imagenes/mass logo 2.png" alt="">Mass</a>
-                  
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>                   
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                      </li>
-                      <li class="nav-item">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#mass" ><img src="Imagenes/mass logo 2.png" alt="">Mass</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>                   
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
                         <a class="nav-link" href="#nos">Nosotros</a>
                       </li>
                       <li class="nav-item">
@@ -66,18 +69,22 @@
       <!--esta es la sección de la API para clima -->
     
     
-  <div id="clim"><br>
-    <h6>Acá podrá consultar la condición del clima en tiempo real para su ciudad:</h6>
-    <form id="clima">
-        <label for="city">Ciudad:</label>
+      <div id="clim"><br>
+        <!-- <h6>Acá podrá consultar la condición del clima en tiempo real para su ciudad:</h6> -->
+        <form id="clima">
+          <img class="fondo-clima" src="Imagenes/fondo_clima.png">   
+          <label for="city" img class="fondo-clima" src="Imagenes/fondo_clima.png">Ciudad:</label>
         <input placeholder="Ingrese una cuidad" type="text" id="city" name="city">
-        <button type="button" onclick="getWeather()">Obtener Clima</button>
+        <button id= "boton" type="submit">Consutar Clima</button>
     </form>
     <div id="weather"></div><br>
-
+    
   </div>
       <!--hasta acá termina la API de clima-->
-        <section class="carrusel">
+
+
+
+    <section class="carrusel">
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -143,7 +150,7 @@
         <div class="row">
           <div class="col-4">
             <div class="card text-center">
-              <img id="img1" src="Imagenes/alberto1.jpg" class="card-img-top" alt="...">
+              <img id="img1" src="Imagenes/alberto1.jpg" class="card-img-top" alt="Alberto Marcano">
               <div class="card">
                 <h5 class="card-title" id="int1">Alberto Marcano</h5>
                 <p class="card-text">Web Developer <br> Diseñador Gráfico.</p>
@@ -154,7 +161,7 @@
           
           <div class="col-4">
             <div class="card text-center">
-              <img id="img2" src="Imagenes/Anibal.1.jpg" class="card-img-top" alt="...">
+              <img id="img2" src="Imagenes/Anibal.1.jpg" class="card-img-top" alt="Anibal Bustos">
               <div class="card">
                 <h5 class="card-title" id="int2">Anibal Bustos</h5>
                 <p class="card-text">Web Developer <br> Community Manager.</p>
@@ -165,7 +172,7 @@
           
           <div class="col-4" >
             <div class="card text-center">
-              <img id="img3" src="Imagenes/SELFI.jpeg" class="card-img-top" alt="...">
+              <img id="img3" src="Imagenes/SELFI.jpeg" class="card-img-top" alt="Marcos Siragusa">
               <div class="card">
                 <h5 class="card-title" id="int3">Marcos Siragusa</h5>
                 <p class="card-text">Comunicación Social <br> WebDev</p>
@@ -188,8 +195,8 @@
               <img src="Imagenes/desarrollo web card.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title" id="Ancla-Desatollo Web">Desarrollo Web</h5>
-                <p class="card-text">Desarrollamos tu pagina web de forma integral desde cero.</p>
-                <a href="#Ancla-Cotizacion" class="btn btn-primary" onclick="cargarSeleccion1()">Solicite Cotizacion</a>
+                <p class="card-text">Desarrollamos tu página web de forma integral desde cero.</p>
+                <a href="#Ancla-Cotizacion" class="btn btn-primary" onclick="cargarSeleccion1()">Solicite Cotización</a>
               </div>
             </div>
           </div>
@@ -200,7 +207,7 @@
                 <div class="card-body">
                   <h5 class="card-title" id="Ancla Redes-Sociales">Redes sociales</h5>
                   <p class="card-text">Administramos tus redes sociales, para potenciar tu negocio.</p>
-                  <a href="#Ancla-Cotizacion" class="btn btn-primary" onclick="cargarSeleccion2()">Solicite Cotizacion</a>
+                  <a href="#Ancla-Cotizacion" class="btn btn-primary" onclick="cargarSeleccion2()">Solicite Cotización</a>
                 </div>
               </div>
             </div>
@@ -210,8 +217,8 @@
                 <img src="Imagenes/diseño grafico card.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title" id="Ancla-Servicios Graficos">Servicios gráficos </h5>
-                  <p class="card-text">Diseñamose e imprimimos productos gráficos de toda índole.</p>
-                  <a href="#Ancla-Cotizacion" class="btn btn-primary" onclick="cargarSeleccion3()">Solicite Cotizacion</a>
+                  <p class="card-text">Diseñamos e imprimimos productos gráficos de toda índole.</p>
+                  <a href="#Ancla-Cotizacion" class="btn btn-primary" onclick="cargarSeleccion3()">Solicite Cotización</a>
                 </div>
               </div>
             </div>
@@ -222,7 +229,7 @@
       
    <section>
      <div class="conteiner my-5">
-       <h1 class="text-center" >Solicite su Cotizacion</h1><br>
+       <h1 class="text-center" >Solicite su Cotización</h1><br>
        <form class="row g-3 needs-validation" novalidate >
          <div class="mb-3 col-4">
            <label for="Nombre" class="form-label">Nombre/Apellido</label>
@@ -252,12 +259,12 @@
           <option selected>Seleccione el servicio que quiere cotizar</option>
           <option value="1">Desarrollo Web</option>
           <option value="2">Redes Sociales</option>
-          <option value="3">Servicios Graficos</option>
+          <option value="3">Servicios Gráficos</option>
           <div class="valid-feedback">
             Correcto!
           </div>
           <div class="invalid-feedback">
-            Seleccione una opcion!
+            Seleccione una opción!
           </div>
         </select>
       </div>
@@ -276,12 +283,12 @@
       <div class="col-12">
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="terms"required>
-          <label for="terms" class="form-check-label">Acepto los terminos y condiciones</label>
+          <label for="terms" class="form-check-label">Acepto los términos y condiciones</label>
           <div class="valid-feedback">
             Correcto!
           </div>
           <div class="invalid-feedback">
-            Es necesario aceptar los terminos
+            Es necesario aceptar los términos
           </div>
         </div>
       </div>
@@ -309,11 +316,11 @@
                 <input type="text" id="last" name="name" placeholder="Apellido"required>
             </div>
             <div class="col">
-                <label for="email">Correo Electronico:</label><br>
+                <label for="email">Correo Electrónico:</label><br>
                 <input type="email" size="30" id="email1" name="email" placeholder="nombre@mail.com" required>
             </div>
             <div class="col-2">
-                <label for="phone">Nro. de telefono:</label><br>
+                <label for="phone">Nro. de teléfono:</label><br>
                 <input type="phone" id="phone1" name="phone" placeholder="Celular" required>
             </div>
         </div><br>
