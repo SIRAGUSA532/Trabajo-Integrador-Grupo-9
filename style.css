@@ -31,6 +31,7 @@ body{
         padding-right: 5px;
         margin-left: 20px;
         margin-right: 20px;
+        border-radius: 15px;
         }
 
        h5{
@@ -87,6 +88,10 @@ body{
         width:250px;
         height:300px;
         border-radius:150px;
+        box-shadow: 0 0 10px rgba(236,6, 0.7);
+       }
+
+       .card-img-top{
         box-shadow: 0 0 10px rgba(236,6, 0.7);
        }
 

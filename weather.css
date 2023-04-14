@@ -11,15 +11,17 @@
   background-color: rgb(235, 221, 248);
   border-radius: 15px;
   box-shadow: 0 0 10px rgb(255, 255, 255);
+  position: relative;
 }
 
 #boton{
   border-radius: 15px;
 }
 .fondo-clima{
-width: 100px;
-height: 50px;
+width: 100%;
+height: 100%;
 border-radius: 15px;
+position: absolute;
 
 }
 
