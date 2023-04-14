@@ -38,7 +38,8 @@ formulario.addEventListener("submit",(event)=>{   //<----acá lo que hacemos es 
       } else if (data.weather[0].description=="snow"){
           weather.innerHTML = "El clima actual en " + data.name + " es: nevada"
       } else if (data.weather[0].description=="light snow"){
-        weather.innerHTML = "El clima actual en " + data.name + " es: nevada ligera"//aca agrego otras condiciones//
+        weather.innerHTML = "El clima actual en " + data.name + " es: nevada ligera"
+      }//aca agrego otras condiciones//
       else {
         weather.innerHTML = "El Clima actual en " + data.name + " es: " + data.weather[0].description; 
       }

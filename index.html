@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Trabajo final</title>
+    <link rel="icon" href="Imagenes/icono_pestaña_logo_mass.jpeg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="toggle.css">
@@ -27,7 +28,7 @@
       <div class="conteiner">
         <nav class="navbar navbar-expand-lg navbar-dark ">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#mass" ><img src="Imagenes/mass logo 2.png" alt="">Mass</a>
+            <a class="navbar-brand" href="#mass" ><img src="Imagenes/mass_logo_2.png" alt="">Mass</a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -330,11 +331,11 @@
           <div id="ho"></div>
         </div> <br><br><br> 
         
-        <div class="row">
+        <div class="row" id="boton_mostrar">
           <button onclick="escribir()" type="button">Pedido en pantalla</button>
         </div><br>     
 
-        <div class="row">
+        <div class="row" id="boton_imprimr">
           <button onclick="imprimirElemento()" type="button">Imprimir Resumen</button>
         </div>      
       </form>  

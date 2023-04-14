@@ -90,4 +90,7 @@ body{
         box-shadow: 0 0 10px rgba(236,6, 0.7);
        }
 
-       
+       /* .boton_mostrar{ <--- aca estoy tratando de llamar por id para dar estilos
+        width: 50px;
+        height: 20px;
+       } */
