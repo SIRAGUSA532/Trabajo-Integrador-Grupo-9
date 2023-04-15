@@ -1,5 +1,5 @@
 # Trabajo-Integrador-Grupo-9
-Este es un trabajo integrador en grupos de 5 estudiantes, el cual fue solicitado por los profesores y facilitadores que comprenden el equipo de Argentona Programa 4.0 en
+Este es un trabajo integrador en grupos de 5 estudiantes, el cual fue solicitado por los profesores y facilitadores que comprenden el equipo de Argentina Programa 4.0 en
 conjunto con la Universidad Tecnológica Nacional (UTN).
 
 Nosotros, somos el grupo número 9 de la clase o cohorte 182 y quedamos 3 estudiantes activos dentro de nuestrto grupo.

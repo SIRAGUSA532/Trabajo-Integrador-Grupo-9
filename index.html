@@ -69,15 +69,17 @@
       <!--esta es la sección de la API para clima -->
     
     
-      <div id="clim"><br>
-        <!-- <h6>Acá podrá consultar la condición del clima en tiempo real para su ciudad:</h6> -->
-        <form id="clima">
-          <img class="fondo-clima" src="Imagenes/fondo_clima.png">   
-          <label for="city" img class="fondo-clima" src="Imagenes/fondo_clima.png">Ciudad:</label>
-        <input placeholder="Ingrese una cuidad" type="text" id="city" name="city">
-        <button id= "boton" type="submit">Consutar Clima</button>
-    </form>
-    <div id="weather"></div><br>
+  <div id="contenedor_transicion_clima"><br>
+        <img class="fondo-clima-contenedor">   
+      <form id="clima-contenedor">
+        <button id= "boton" type="submit">
+          <img id="fondo_clima_boton" src="Imagenes/clima_boton2.png">  
+          <p class="texto_dentro_boton"> Consultar Clima en:</p>
+        </button>
+        <input placeholder="Ingrese una ciudad" type="text" class="clima_imput" id="city" name="city">
+        <div id="weather"></div><br> 
+        <img id="clima_imagen_preview" class="clima_imagen_preview" src="Imagenes/cielo_muy_nublado.png" alt="">
+      </form>
     
   </div>
       <!--hasta acá termina la API de clima-->
