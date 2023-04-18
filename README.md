@@ -4,10 +4,10 @@ conjunto con la Universidad Tecnológica Nacional (UTN).
 
 Nosotros, somos el grupo número 9 de la clase o cohorte 182 y quedamos 3 estudiantes activos dentro de nuestrto grupo.
 
-Nuestro proyecto se trata de armar una landing page para servicios informáticos y gráficos. en la cual aplicamos las tecnologias HTML5, CSS3 y JS y en la cua podraán encontrar:
+Nuestro proyecto se trata de armar una landing page para servicios informáticos y gráficos. en la cual aplicamos las tecnologias HTML5, CSS3 y JS y en la cual podrán encontrar:
 
 
-Una ó de encabezado donde se encuentra el logo de la empresa y la barra navegadora de contenidos.
+Una sección de encabezado donde se encuentra el logo de la empresa y la barra navegadora de contenidos.
 
 Un botón estético y funcional para Dark Mode.
 
