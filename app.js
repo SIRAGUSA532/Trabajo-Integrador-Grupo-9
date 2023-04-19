@@ -10,7 +10,7 @@ function escribir(){
     let apellido1 = document.getElementById("last").value
     let email1 = document.getElementById("email1").value
     let phone1 = document.getElementById("phone1").value
-    document.getElementById("image").innerHTML='<img src="./imagenes/logo.png"/>'
+    document.getElementById("image").innerHTML='<img src="./imagenes/logo2.png"/>'
     document.getElementById('ho').innerText = "Nombre: "+ nombre1 +"\n" + "Apellido: "+ apellido1 + "\n"+"E-mail: "+email1+"\n"+"Telefono: "+phone1+"\n"+"\n"+"Ha elegido que le proporcionemos informacion sobre: "+selec+ "\n"+ "\n"
     }
 

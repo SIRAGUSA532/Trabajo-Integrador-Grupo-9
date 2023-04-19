@@ -37,26 +37,26 @@ body{
         border-radius: 15px;
         }
 
-       h5{
+       h1{
         color: rgb(22, 6, 253);
-        font-size: 30px;
-        text-shadow: 3px 3px 3px rgb(243, 37, 37), 2px 2px 2px black; /*<--- CONSULTAR ... ACA DEBARIA IR H1 (POR UENAS PRACTCAS, ARREGLANDO CON CSS) Y LAS HOTRAS H5*/
-        border:2px rgb(255, 123, 0);
+        font-size: 60px;
+        text-shadow: 2px 2px 2px rgb(243, 37, 37), 1px 1px 1px black; /*<--- CONSULTAR ... ACA DEBARIA IR H1 (POR UENAS PRACTCAS, ARREGLANDO CON CSS) Y LAS HOTRAS H5*/
+        border:1px rgb(255, 123, 0);
       }
         
        #redes {
         color: rgb(1, 63, 252);
-        font-size: 20px;
+        font-size: 25px;
       }
        
        #diseño{
         color: rgb(1, 63, 252);
-        font-size: 20px;
+        font-size: 25px;
       }
        
        #desarrollo{
         color: rgb(1, 63, 252);
-        font-size: 20px;
+        font-size: 25px;
       }
 
        .col-4{
@@ -140,3 +140,9 @@ body{
       .form-label{
       
       }
+
+
+#c3{
+  filter: brightness(130%);
+}
+
