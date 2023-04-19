@@ -15,14 +15,17 @@ body{
     line-height: 2em;
     font-family: Arial, Helvetica, sans-serif;
 }
-.navbar-brand img{
-    width: 80px;
-    height: 80px;
-    font-size: large;
-    font-family: Helvetica;
+.navbar-brand img{ /*<-----esto es solo el tamaño del logo*/
+    width: 120px;
+    height: 120px;
 }
+
+ .navbar-brand{ /*<-----esto es solo el tamaño de la palabra mass*/
+  font-size: 40px;
+  font-family: Arial, 'Lucida Sans';
+   }
 .img-fluid{
-  box-shadow: 0 0 10px rgba(236,6, 0.7);
+  box-shadow: 5px 5px 15px rgba(236,6, 0.7);
   border-radius: 10px;
 }
 
@@ -35,27 +38,26 @@ body{
         }
 
        h5{
-        color: rgb(1, 63, 252);
+        color: rgb(22, 6, 253);
         font-size: 30px;
-        text-shadow: 0 0 30px rgb(65, 2, 50);}
+        text-shadow: 3px 3px 3px rgb(243, 37, 37), 2px 2px 2px black; /*<--- CONSULTAR ... ACA DEBARIA IR H1 (POR UENAS PRACTCAS, ARREGLANDO CON CSS) Y LAS HOTRAS H5*/
+        border:2px rgb(255, 123, 0);
+      }
         
        #redes {
         color: rgb(1, 63, 252);
         font-size: 20px;
-        text-shadow: 0 0 30px rgb(65, 2, 50);
-       }
+      }
        
        #diseño{
         color: rgb(1, 63, 252);
         font-size: 20px;
-        text-shadow: 0 0 30px rgb(65, 2, 50);
-       }
+      }
        
        #desarrollo{
         color: rgb(1, 63, 252);
         font-size: 20px;
-        text-shadow: 0 0 30px rgb(65, 2, 50); 
-       }
+      }
 
        .col-4{
         display: flex;

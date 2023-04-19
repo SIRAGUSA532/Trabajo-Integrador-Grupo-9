@@ -4,21 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: left;
-  padding-inline-start: 6%;
+  padding-inline-start: 10%;
+  padding-bottom: 30px;
   }
-
-/* #clima-contenedor{
-  border-radius: 15px; 
-  box-shadow: 0 0 10px rgb(255, 255, 255);
-  position: relative;
-  width:1000px;
-  height: 80px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;  
-  justify-content: left;
-  align-content: flex-start;
-  } */
 
 
 #boton{
@@ -31,7 +19,7 @@
   display: inline-block; /* Hacemos que el botón sea un bloque en línea */
   font-size: 20px; /* Tamaño de fuente del texto */
   cursor: pointer; /* Cambiamos el cursor al pasar el ratón por encima del botón */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Añadimos el relieve al botón con la propiedad box-shadow */
+  box-shadow: 02px 8px 8px 02px rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Añadimos el relieve al botón con la propiedad box-shadow */
 position: relative; 
 overflow: hidden;
 }
@@ -39,7 +27,10 @@ overflow: hidden;
   z-index: 4;
   position: relative;
   text-size-adjust: 12px;
-  font-weight: 500;
+  font-weight: 900px;
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgb(6, 7, 0);
+  text-shadow:2px 2px 0px rgb(238, 220, 220), 3px 3px 0px black;
 }
 
 #fondo_clima_boton{
@@ -51,7 +42,7 @@ overflow: hidden;
 }
 
 .clima_imput{
-  width: 170px;
+  width: 210px;
   height: 40px;
   margin-right: 10px;
   }
@@ -79,5 +70,6 @@ overflow: hidden;
 #clima-contenedor{
   display: flex;
   align-items: center;
+  
 }
 

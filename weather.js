@@ -62,7 +62,7 @@ formulario.addEventListener("submit",(event)=>{   //<----acá lo que hacemos es 
         clima.style.display="block"
       } else if (data.weather[0].description=="mist"){
         weather.innerHTML = "El clima actual en " + data.name + " es: neblinoso"
-        clima.src="Imagenes/neblina.png"
+        clima.src="Imagenes/neblina1.png"
         clima.style.display="block"
       } else if (data.weather[0].description=="heavy intensity rain"){
         weather.innerHTML = "El clima actual en " + data.name + " es: lluvia muy intensa"
