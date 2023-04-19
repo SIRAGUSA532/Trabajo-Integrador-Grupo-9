@@ -22,23 +22,23 @@ formulario.addEventListener("submit",(event)=>{   //<----acá lo que hacemos es 
 
       if (data.weather[0].description=="overcast clouds"){
         weather.innerHTML = "El Clima actual en " + data.name + " es: cielo muy nublado";
-        clima.src="Imagenes/cielo_muy_nublado.png"
+        clima.src="Imagenes/clima-cielo-muy-nublado.png"
         clima.style.display="block"
       } else if(data.weather[0].description=="broken clouds"){
         weather.innerHTML = "El Clima actual en " + data.name + " es: cielo parcialmente nublado";
-        clima.src="Imagenes/parcialmente_nublado.png"
+        clima.src="Imagenes/clima_parcialmente_nublado.png"
         clima.style.display="block"
       } else if(data.weather[0].description=="clear sky"){
         weather.innerHTML = "El Clima actual en " + data.name + " es: cielo despejado";
-        clima.src="Imagenes/cielo_despejado.png"
+        clima.src="Imagenes/clima_cielo_despejado.png"
         clima.style.display="block"    
       } else if (data.weather[0].description=="scattered clouds"){
         weather.innerHTML = "El clima actual en " + data.name + " es: nubes dispersas"
-        clima.src="Imagenes/nubes_dispersas.png"
+        clima.src="Imagenes/clima-nubes-dispersas.png"
         clima.style.display="block"
       }  else if (data.weather[0].description=="few clouds"){
         weather.innerHTML = "El clima actual en " + data.name + " es: pocas nubes"
-        clima.src="Imagenes/pocas_nubes.png"
+        clima.src="Imagenes/clima-pocas-nubes.png"
         clima.style.display="block"
       } else if (data.weather[0].description=="light rain"){
         weather.innerHTML = "El clima actual en " + data.name + " es: lluvia ligera"
@@ -62,7 +62,7 @@ formulario.addEventListener("submit",(event)=>{   //<----acá lo que hacemos es 
         clima.style.display="block"
       } else if (data.weather[0].description=="mist"){
         weather.innerHTML = "El clima actual en " + data.name + " es: neblinoso"
-        clima.src="Imagenes/neblina1.png"
+        clima.src="Imagenes/clima-neblina1.png"
         clima.style.display="block"
       } else if (data.weather[0].description=="heavy intensity rain"){
         weather.innerHTML = "El clima actual en " + data.name + " es: lluvia muy intensa"
