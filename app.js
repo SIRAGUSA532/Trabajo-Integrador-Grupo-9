@@ -6,13 +6,19 @@ const desplegable = document.getElementById("desplegable")
 
 let selec =""
 function escribir(){
+    
     let nombre1 = document.getElementById('name1').value
     let apellido1 = document.getElementById("last").value
     let email1 = document.getElementById("email1").value
     let phone1 = document.getElementById("phone1").value
-    document.getElementById("image").innerHTML='<img src="./imagenes/logo-rojo-fondo-blanco-mass.png"/>'
-    document.getElementById('ho').innerText = "Nombre: "+ nombre1 +"\n" + "Apellido: "+ apellido1 + "\n"+"E-mail: "+email1+"\n"+"Telefono: "+phone1+"\n"+"\n"+"Ha elegido que le proporcionemos informacion sobre: "+selec+ "\n"+ "\n"
+    if ((nombre1 && apellido1 &&email1 && phone1)>0){
+        document.getElementById("image").innerHTML='<img src="./imagenes/logo-rojo-fondo-blanco-mass.png"/>'
+        document.getElementById('ho').innerText = "Nombre: "+ nombre1 +"\n" + "Apellido: "+ apellido1 + "\n"+"E-mail: "+email1+"\n"+"Telefono: "+phone1+"\n"+"\n"+"Ha elegido que le proporcionemos informacion sobre: "+selec+ "\n"+ "\n"
+    }else {
+        alert("Por favor complete todos los campos")
     }
+}
+
 
 function cargarSeleccion1(){
     selec = document.getElementById("Ancla-Desatollo Web").innerText;
