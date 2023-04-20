@@ -39,9 +39,13 @@ body{
 
        h1{
         color: rgb(22, 6, 253);
-        font-size: 60px;
-        text-shadow: 2px 2px 2px rgb(243, 37, 37), 1px 1px 1px black; /*<--- CONSULTAR ... ACA DEBARIA IR H1 (POR UENAS PRACTCAS, ARREGLANDO CON CSS) Y LAS HOTRAS H5*/
-        border:1px rgb(255, 123, 0);
+        font-size: 65px;
+        text-shadow: 2px 2px 0px rgb(46, 156, 247), 3px 3px 0.5px red;
+        
+      }
+      .parra{
+        text-shadow: 2px 2px 0px rgb(46, 156, 247), 3px 3px 0.5px red;
+        
       }
         
        #redes {
@@ -97,7 +101,11 @@ body{
         box-shadow: 0 0 10px rgba(236,6, 0.7);
        }
 
-
+       h6{
+        text-align: justify;
+        font-size: smaller;
+        
+       }
          #segui {
           align-content: center;
           margin-left: 550px;
