@@ -29,3 +29,24 @@ Un formulario para generar la impresion o mostrar en pantalla el presupuesto de 
 Un formulario de contacto, por si el usuario necesita aclarar dudas o si requiere atención específica.
 
 Un footer minimalista, pero funcional, ademas de estético.
+
+
+
+
+                      AGRADECIMIENTOS EPECIALES:
+
+Como ser agradecido es ser bendicido, en esta oportunidad queremos agradecer a todo el equipo de ARGENTINA PROGRAMA 4.0 y  LA UNIVERSIDAD TECNOLOGICA NACIONAL por haber hecho realidad este espacio y darnos esta valiosa oportunidad.
+
+tambien a las personas que con su experiencia y mentoria nos ayudaron a desrrollar este proyecto...
+
+Profesor: MARCOS CIELO, gracias por haber dedicado sus horas de trabajo a nuestra enseñanza.
+
+Full Stack Web Developer: HUMBERTO JR GUERRA, gracias por tu paciencia y tu mentoria.
+
+y por supuesto no puede faltar CHAT GPT y YOUTUBE JAJAJAJA
+
+
+
+
+
+
