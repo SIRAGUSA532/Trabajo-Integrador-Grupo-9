@@ -25,9 +25,18 @@ body{
   font-family: Arial, 'Lucida Sans';
    }
 .img-fluid{
-  box-shadow: 5px 5px 15px rgba(236,6, 0.7);
+  box-shadow: 5px 8px 12px red;
   border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
+
+.img-fluid:hover{
+  transform: scale(1.1);
+  box-shadow: 13px 15px 37px black;
+}
+
+
 
      .containar{
         padding-left: 2px;
@@ -40,11 +49,12 @@ body{
        h1{
         color: rgb(22, 6, 253);
         font-size: 65px;
-        text-shadow: 2px 2px 0px rgb(46, 156, 247), 3px 3px 0.5px red;
+        text-shadow: 2px 2px 0px rgb(46, 156, 247), 5px 8px 12px red;
+        
         
       }
       .parra{
-        text-shadow: 2px 2px 0px rgb(46, 156, 247), 3px 3px 0.5px red;
+        text-shadow: 2px 2px 0px rgb(46, 156, 247), 5px 8px 12px red;
         
       }
         
@@ -78,7 +88,9 @@ body{
         width:250px;
         height:300px;
         border-radius:150px;
-        box-shadow: 0 0 10px rgba(236,6, 0.7);
+        box-shadow: 5px 8px 12px red;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
        }
 
        #img2{
@@ -86,7 +98,9 @@ body{
         width:250px;
         height:300px;
         border-radius:150px;
-        box-shadow: 0 0 10px rgba(236,6, 0.7);
+        box-shadow: 5px 8px 12px red;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
        }
 
        #img3{
@@ -94,11 +108,13 @@ body{
         width:250px;
         height:300px;
         border-radius:150px;
-        box-shadow: 0 0 10px rgba(236,6, 0.7);
+        box-shadow: 5px 8px 12px red;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
        }
 
        .card-img-top{
-        box-shadow: 0 0 10px rgba(236,6, 0.7);
+        box-shadow: 5px 8px 12px red;
        }
 
        h6{
@@ -166,7 +182,7 @@ body{
   position: relative;
   margin:200px auto;
   border-radius: 10px;
-  box-shadow: 5px 8px 12px black;
+  box-shadow: 5px 8px 12px red;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
