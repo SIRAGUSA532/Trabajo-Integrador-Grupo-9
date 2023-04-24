@@ -192,7 +192,7 @@ body{
   position: relative;
   /* margin:200px auto; */
   border-radius: 10px;
-  box-shadow: 5px 8px 12px red;
+  /* box-shadow: 5px 8px 12px red; */
   cursor: pointer;
   /* transition: all 0.3s ease-in-out; */
   gap: 90px;
